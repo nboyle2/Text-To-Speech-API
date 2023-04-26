@@ -1,0 +1,157 @@
+[
+    {
+        "Geography": "Asia Pacific",
+        "Region": "Australia East",
+        "Region identifier": "australiaeast"
+    },
+    {
+        "Geography": "Asia Pacific",
+        "Region": "Central India",
+        "Region identifier": "centralindia"
+    },
+    {
+        "Geography": "Asia Pacific",
+        "Region": "East Asia",
+        "Region identifier": "eastasia"
+    },
+    {
+        "Geography": "Asia Pacific",
+        "Region": "Japan East",
+        "Region identifier": "japaneast"
+    },
+    {
+        "Geography": "Asia Pacific",
+        "Region": "Japan West",
+        "Region identifier": "japanwest"
+    },
+    {
+        "Geography": "Asia Pacific",
+        "Region": "Jio India West",
+        "Region identifier": "jioindiawest"
+    },
+    {
+        "Geography": "Asia Pacific",
+        "Region": "Korea Central",
+        "Region identifier": "koreacentral"
+    },
+    {
+        "Geography": "Asia Pacific",
+        "Region": "Southeast Asia",
+        "Region identifier": "southeastasia"
+    },
+    {
+        "Geography": "Canada",
+        "Region": "Canada Central",
+        "Region identifier": "canadacentral"
+    },
+    {
+        "Geography": "Europe",
+        "Region": "France Central",
+        "Region identifier": "francecentral"
+    },
+    {
+        "Geography": "Europe",
+        "Region": "Germany West Central",
+        "Region identifier": "germanywestcentral"
+    },
+    {
+        "Geography": "Europe",
+        "Region": "North Europe",
+        "Region identifier": "northeurope"
+    },
+    {
+        "Geography": "Europe",
+        "Region": "Norway East",
+        "Region identifier": "norwayeast"
+    },
+    {
+        "Geography": "Europe",
+        "Region": "Sweden Central",
+        "Region identifier": "swedencentral"
+    },
+    {
+        "Geography": "Europe",
+        "Region": "Switzerland North",
+        "Region identifier": "switzerlandnorth"
+    },
+    {
+        "Geography": "Europe",
+        "Region": "Switzerland West",
+        "Region identifier": "switzerlandwest"
+    },
+    {
+        "Geography": "Europe",
+        "Region": "UK South",
+        "Region identifier": "uksouth"
+    },
+    {
+        "Geography": "Europe",
+        "Region": "West Europe",
+        "Region identifier": "westeurope"
+    },
+    {
+        "Geography": "Middle East",
+        "Region": "UAE North",
+        "Region identifier": "uaenorth"
+    },
+    {
+        "Geography": "South America",
+        "Region": "Brazil South",
+        "Region identifier": "brazilsouth"
+    },
+    {
+        "Geography": "US",
+        "Region": "Central US",
+        "Region identifier": "centralus"
+    },
+    {
+        "Geography": "US",
+        "Region": "East US",
+        "Region identifier": "eastus"
+    },
+    {
+        "Geography": "US",
+        "Region": "East US 2",
+        "Region identifier": "eastus2"
+    },
+    {
+        "Geography": "US",
+        "Region": "North Central US",
+        "Region identifier": "northcentralus"
+    },
+    {
+        "Geography": "US",
+        "Region": "South Central US",
+        "Region identifier": "southcentralus"
+    },
+    {
+        "Geography": "US",
+        "Region": "US Gov Arizona",
+        "Region identifier": "usgovarizona"
+    },
+    {
+        "Geography": "US",
+        "Region": "US Gov Virginia",
+        "Region identifier": "usgovvirginia"
+    },
+    {
+        "Geography": "US",
+        "Region": "West Central US",
+        "Region identifier": "westcentralus"
+    },
+    {
+        "Geography": "US",
+        "Region": "West US",
+        "Region identifier": "westus"
+    },
+    {
+        "Geography": "US",
+        "Region": "West US 2",
+        "Region identifier": "westus2"
+    },
+    {
+        "Geography": "US",
+        "Region": "West US 3",
+        "Region identifier": "westus3"
+    }
+]

@@ -1,9 +1,11 @@
+const axios = require('axios');
+
 const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-    res.send('test');
+app.get('/regions', (req, res) => {
+    res.sendFile(__dirname + '/regions.json');
 });
 
 app.listen(port, () => {
