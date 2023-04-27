@@ -1,11 +1,22 @@
-const axios = require('axios');
-
 const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get('/regions', (req, res) => {
-    res.sendFile(__dirname + '/regions.json');
+const axios = require('axios');
+const config = {
+    headers: {
+        'Ocp-Apim-Subscription-Key': ''
+    }
+};
+
+app.get('/voices', (req, res) => {
+    axios.get('https://eastus.tts.speech.microsoft.com/cognitiveservices/voices/list', config)
+    .then(response => {
+        res.send(response.data);
+    })
+    .catch(err => {
+        console.log(err);
+    });
 });
 
 app.listen(port, () => {
