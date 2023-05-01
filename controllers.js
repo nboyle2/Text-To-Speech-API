@@ -13,6 +13,7 @@ exports.voices =  (req, res) => {
     })
     .catch(err => {
         console.log(err);
+        res.status(500).send();
     });
 };
 
@@ -35,9 +36,11 @@ exports.tts = (req, res) => {
     
     axios.post('https://eastus.tts.speech.microsoft.com/cognitiveservices/v1', xmlBody, config)
     .then(response => {
+        res.setHeader('Content-Disposition', 'attachment; filename=text-to-speech.wav');
         response.data.pipe(res);
     })
     .catch(err => {
         console.log(err);
+        res.status(500).send();
     });
 };
