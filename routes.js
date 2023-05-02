@@ -14,7 +14,7 @@ const options = {
             version: '1.0.0',
             description: 'The Text-To-Speech API allows you to get a list of voices and convert text into synthesized speech using Microsoft Azure Cognitive Services.'
         },
-        host: 'localhost:3000',
+        host: '159.223.123.107:3000',
         basePath: '/'
     },
     apis: ['./routes.js']
