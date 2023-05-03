@@ -1,9 +1,9 @@
 # Text-To-Speech API
-The Text-To-Speech API allows you to get a list of voices and convert text into synthesized speech using Microsoft Azure Cognitive Services. You can test this API using the playground at the [`https://159.223.123.107:3000/docs`](https://159.223.123.107:3000/docs) endpoint.
+The Text-To-Speech API allows you to get a list of voices and convert text into synthesized speech using Microsoft Azure Cognitive Services. You can test this API using the playground at the [`http://159.223.123.107:3000/docs`](http://159.223.123.107:3000/docs) endpoint.
 
 
 ## Get a List of Voices
-To get a full list of available voices, you can send a `GET` request to the [`https://159.223.123.107:3000/voices`](https://159.223.123.107:3000/voices) endpoint.
+To get a full list of available voices, you can send a `GET` request to the [`http://159.223.123.107:3000/voices`](http://159.223.123.107:3000/voices) endpoint.
 
 ### Sample Request
 ```
@@ -68,7 +68,7 @@ You will receive a response with a JSON body that contains a full list of availa
 
 
 ## Convert Text to Speech
-To convert text to speech, you can send a `POST` request to the `https://159.223.123.107:3000/text-to-speech` endpoint.
+To convert text to speech, you can send a `POST` request to the `http://159.223.123.107:3000/text-to-speech` endpoint.
 
 ### Request Body
 The JSON body of the request should include the `ShortName` of the voice you have chosen and the `Text` you would like to convert to speech.

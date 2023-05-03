@@ -13,5 +13,5 @@ app.use(cors());
 app.use(routes);
 
 app.listen(port, host, () => {
-    console.log(`Listening at https://${host}:${port}`);
+    console.log(`Listening at http://${host}:${port}`);
 });
