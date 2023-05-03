@@ -64,8 +64,8 @@ router.use('/docs', swaggerUi.serve, swaggerUi.setup(specs));
  * @swagger
  * /voices:
  *    get:
- *        summary: Get available voices
- *        description: Get available voices
+ *        summary: Get a list of voices
+ *        description: Get a list of voices
  *        responses:
  *             200:
  *                description: OK

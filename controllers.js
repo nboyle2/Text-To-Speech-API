@@ -3,7 +3,7 @@ const axios = require('axios');
 exports.voices =  (req, res) => {
     const config = {
         headers: {
-            'Ocp-Apim-Subscription-Key': ''
+            'Ocp-Apim-Subscription-Key': process.env.SUBSCRIPTION_KEY
         }
     };
 
@@ -28,7 +28,7 @@ exports.tts = (req, res) => {
         headers: {
             'X-Microsoft-OutputFormat': 'riff-48khz-16bit-mono-pcm',
             'Content-Type': 'application/ssml+xml',
-            'Ocp-Apim-Subscription-Key': '',
+            'Ocp-Apim-Subscription-Key': process.env.SUBSCRIPTION_KEY,
             'User-Agent': 'Text-To-Speech API'
         },
         responseType: 'stream'
