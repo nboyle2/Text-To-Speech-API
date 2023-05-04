@@ -1,7 +1,6 @@
 # Text-To-Speech API
 The Text-To-Speech API allows you to get a list of voices and convert text into synthesized speech using Microsoft Azure Cognitive Services. You can test this API using the playground at the [`http://159.223.123.107:3000/docs`](http://159.223.123.107:3000/docs) endpoint.
 
-
 ## Get a List of Voices
 To get a full list of available voices, you can send a `GET` request to the [`http://159.223.123.107:3000/voices`](http://159.223.123.107:3000/voices) endpoint.
 
@@ -33,13 +32,29 @@ You will receive a response with a JSON body that contains a full list of availa
   },
   ...,
   {
-    "Name": "Microsoft Server Speech Text to Speech Voice (en-US, AmberNeural)",
-    "DisplayName": "Amber",
-    "LocalName": "Amber",
-    "ShortName": "en-US-AmberNeural",
+    "Name": "Microsoft Server Speech Text to Speech Voice (en-US, JennyNeural)",
+    "DisplayName": "Jenny",
+    "LocalName": "Jenny",
+    "ShortName": "en-US-JennyNeural",
     "Gender": "Female",
     "Locale": "en-US",
     "LocaleName": "English (United States)",
+    "StyleList": [
+        "assistant",
+        "chat",
+        "customerservice",
+        "newscast",
+        "angry",
+        "cheerful",
+        "sad",
+        "excited",
+        "friendly",
+        "terrified",
+        "shouting",
+        "unfriendly",
+        "whispering",
+        "hopeful"
+    ],
     "SampleRateHertz": "48000",
     "VoiceType": "Neural",
     "Status": "GA",
@@ -68,7 +83,6 @@ You will receive a response with a JSON body that contains a full list of availa
 | 200 | OK | The request was successful. |
 | 400 | Bad Request | The request was malformed. |
 | 500 | Internal Server Error | There was a server-side problem. |
-
 
 ## Convert Text to Speech
 To convert text to speech, you can send a `POST` request to the `http://159.223.123.107:3000/text-to-speech` endpoint.
