@@ -6,7 +6,7 @@ The Text-To-Speech API allows you to get a list of voices and convert text into 
 To get a full list of available voices, you can send a `GET` request to the [`http://159.223.123.107:3000/voices`](http://159.223.123.107:3000/voices) endpoint.
 
 ### Request Body
-A body isn't required for `GET` requests to this endpoint.
+A body is not required for `GET` requests to this endpoint.
 
 ### Sample Request
 ```
@@ -74,7 +74,7 @@ You will receive a response with a JSON body that contains a full list of availa
 To convert text to speech, you can send a `POST` request to the `http://159.223.123.107:3000/text-to-speech` endpoint.
 
 ### Request Body
-The JSON body of the request should include the `ShortName` of the voice you've chosen, the optional speaking `Style` (must be supported by the voice), and the `Text` you would like to convert to speech.
+The JSON body of the request should include the `ShortName` of the voice you have chosen, the optional speaking `Style` (must be supported by the voice), and the `Text` you would like to convert to speech.
 ```
 {
     "ShortName": "en-US-JennyNeural",
