@@ -13,7 +13,17 @@ exports.voices =  (req, res) => {
     })
     .catch(err => {
         console.log(err);
-        res.status(500).send();
+
+        switch(err.response.status) {
+            case 400:
+                res.status(400).send();
+                break;
+            case 401:
+            case 429:
+            case 502:
+            default:
+                res.status(500).send();
+        }
     });
 };
 
@@ -41,6 +51,18 @@ exports.tts = (req, res) => {
     })
     .catch(err => {
         console.log(err);
-        res.status(500).send();
+
+        switch(err.response.status) {
+            case 400:
+            case 403:
+                res.status(400).send();
+                break;
+            case 401:
+            case 415:
+            case 429:
+            case 502:
+            default:
+                res.status(500).send();
+        }
     });
 };
