@@ -5,6 +5,9 @@ The Text-To-Speech API allows you to get a list of voices and convert text into 
 ## Get a List of Voices
 To get a full list of available voices, you can send a `GET` request to the [`http://159.223.123.107:3000/voices`](http://159.223.123.107:3000/voices) endpoint.
 
+### Request Body
+A body isn't required for `GET` requests to this endpoint.
+
 ### Sample Request
 ```
 GET /voices HTTP/1.1
@@ -71,10 +74,11 @@ You will receive a response with a JSON body that contains a full list of availa
 To convert text to speech, you can send a `POST` request to the `http://159.223.123.107:3000/text-to-speech` endpoint.
 
 ### Request Body
-The JSON body of the request should include the `ShortName` of the voice you have chosen and the `Text` you would like to convert to speech.
+The JSON body of the request should include the `ShortName` of the voice you've chosen, the optional speaking `Style` (must be supported by the voice), and the `Text` you would like to convert to speech.
 ```
 {
     "ShortName": "en-US-JennyNeural",
+    "Style": "terrified",
     "Text": "This text will be converted to speech."
 }
 ```
@@ -86,16 +90,17 @@ Host: 159.223.123.107:3000
 
 {
     "ShortName": "en-US-JennyNeural",
+    "Style": "terrified",
     "Text": "This text will be converted to speech."
 }
 ```
 
 ### Sample Response
-You will receive a response with the body containing an audio file of the text converted to speech.
+You will receive a response with its body containing an audio file of the text converted to speech.
 
 ### HTTP Status Codes
 | HTTP Status Code | Description | Possible Reason |
 | ------------- | ------------- | ------------- |
 | 200 | OK | The request was successful. |
-| 400 | Bad Request | The request was malformed. A required value was likely missing, empty, or null. |
+| 400 | Bad Request | The request was malformed. A required value was likely invalid, missing, empty, or null. |
 | 500 | Internal Server Error | There was a server-side problem. |

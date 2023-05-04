@@ -28,9 +28,11 @@ exports.voices =  (req, res) => {
 };
 
 exports.tts = (req, res) => {
-    const xmlBody = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+    const xmlBody = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-US">
                         <voice name="${req.body.ShortName}">
-                            ${req.body.Text}
+                            <mstts:express-as style="${req.body.Style}">
+                                ${req.body.Text}
+                            </mstts:express-as>
                         </voice>
                     </speak>`;
     

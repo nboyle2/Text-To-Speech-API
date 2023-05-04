@@ -12,7 +12,7 @@ const options = {
         info: {
             title: 'Text-To-Speech API',
             version: '1.0.0',
-            description: 'The Text-To-Speech API allows you to get a list of voices and convert text into synthesized speech using Microsoft Azure Cognitive Services. View the full documention here: https://github.com/nboyle2/Text-To-Speech-API'
+            description: 'The Text-To-Speech API allows you to get a list of voices and convert text into synthesized speech using Microsoft Azure Cognitive Services. You can view the full documention here: https://github.com/nboyle2/Text-To-Speech-API'
         },
         host: '159.223.123.107:3000',
         basePath: '/'
@@ -43,6 +43,8 @@ router.use('/docs', swaggerUi.serve, swaggerUi.setup(specs));
  *                         type: string
  *                     LocaleName:
  *                         type: string
+ *                     StyleList:
+ *                         type: array
  *                     SampleRateHertz:
  *                         type: string
  *                     VoiceType:
@@ -55,6 +57,8 @@ router.use('/docs', swaggerUi.serve, swaggerUi.setup(specs));
  *                 type: object
  *                 properties:
  *                     ShortName:
+ *                         type: string
+ *                     Style:
  *                         type: string
  *                     Text:
  *                         type: string
